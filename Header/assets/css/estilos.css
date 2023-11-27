@@ -1,0 +1,148 @@
+/* Reset de estilos para todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos gerais do corpo da página */
+body {
+  background-image: url("/assets/imagens/fundo2.png"),
+    url("/assets/imagens/fundo.png"), url("/assets/imagens/fundo2.png");
+  background-repeat: repeat-x;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Estilos do cabeçalho */
+header {
+  width: 80%;
+  margin: 30px auto;
+}
+
+/* Estilos para a seção de imagens no cabeçalho */
+.imagens-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Estilos para o plugin na seção de imagens no cabeçalho */
+.imagens-header .plugin {
+  justify-self: end;
+  align-self: end;
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  right: 0;
+}
+
+main {
+  background-color: green;
+}
+
+
+/* Estilos básicos para o menu de navegação */
+nav {
+  width: 80%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+  position: relative;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px;
+  transition: background-color 0.3s ease; 
+}
+
+/* ícone de seta para baixo ao lado do texto "Revistas" */
+.dropdown-icon::after {
+  content: " \25BC"; /* Seta para baixo usando Unicode */
+  margin-left: 5px;
+}
+
+/* Estilos para o menu suspenso */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 190px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(0, 0, 0);
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.3s ease; 
+}
+
+.dropdown-content a:hover {
+  background-color: #1C902F;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+.fa-chevron-down {
+    font-size: 0.8em;
+    margin-left: 3px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+
+
+/* Estilizando o campo de pesquisa */
+.search-input {
+    padding: 8px 20px;
+    border: 1px solid #ffffff; 
+    border-radius: 20px; 
+    background-color: transparent; 
+    width: 450px; 
+    color: #f6f6f6; 
+}
+
+/* Estilizando o ícone de pesquisa */
+.search-icon {
+    position: absolute; 
+    right: 10px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
+
+.input-pesquisa {
+    position: relative; 
+}
+
+
+.search-input::placeholder {
+    padding-right: 20px; 
+}
+.search-input:focus {
+    box-shadow: none; 
+}
