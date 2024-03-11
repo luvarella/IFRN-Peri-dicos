@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Periódicos do IFRN</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/principal.css">
+  <link rel="stylesheet" href="./css/estilos.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="imagens-header">
+          <div class="vazio">
+              
+          </div>
+            <div class="logo">
+              <a href="index.html"><img src="./imagens/header/Ativo 2 1.svg" alt="Imagem da logotipo do Portal de Periódicos do IFRN"</img></a>
+            </div>
+            <div class="plugin">
+              <div class = "acesso">
+                <ul style="list-style: none;">
+                    <li class="dropdown">
+                        <a href="#"><img src="./imagens/header/iconeperfil.png" alt="ícone de acesso ao perfil so usuário"></a>
+                        <div class="dropdown-content">
+                            <a href="acesso.html" style = "padding:10px;">Acesso</a>
+                            <a href="cadastro.html" style = "padding:10px;">Cadastro</a>
+                        </div>
+                    </li>
+                </ul>
+              </div>
+                <img src="./imagens/header/iconelinguagem.png" alt="ícone para mudar linguagem">
+            </div>
+        </div>
+      <nav>
+          <ul style="line-height: 0;">
+              <li class="dropdown">
+                  <a href="#">Revistas <i class="fas fa-chevron-down"></i></a>
+                  <div class="dropdown-content">
+                      <a href="r-ativas.html" style = "padding-top:20px;padding-bottom:20px">Todas as revistas</a>
+                      <a href="r-incubadas.html" style = "padding-top:20px;padding-bottom:20px">Revistas incubadas</a>
+                      <a href="r-inativas.html" style = "padding-top:20px;padding-bottom:20px">Revistas inativas</a>
+                  </div>
+              </li>
+              <li><a href="#">Contato</a></li>
+              <li><a href="comite.html">Comitê Gestor</a></li>
+              <li><a href="#">Política Editorial</a></li>
+          </ul>
+          <div class="input-pesquisa">
+              <input type="search" class="search-input" name="q">
+              <img class="search-icon" src="./imagens/header/pesquisar.png" alt="Pesquisar">
+          </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="titulo">
+        <h2>Submissões recentes</h2>
+        <div class = "deco">
+        <div class = "linhav"></div>
+        <div class = "bola"></div>
+        <div class = "linhav"></div>
+        </div>
+        </section>
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                <!-- Carousel indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                </ol>   
+                <!-- Wrapper for carousel items -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <a href = "https://www2.ifrn.edu.br/ojs/index.php/geoconexoes"><div class="thumb-wrapper">
+                          <div class="img-box">
+                            <img src="imagens/header/geo.png" class="img-responsive" alt="Capa da revista Geoconexões.">
+                          </div>
+                          <div class="thumb-content">
+                            <h4>Geoconexões</h4>
+                            <h4>v.30 n.4</h4>
+                            <h5>Renan Balbino</h5>
+                          </div>						
+                        </div></a>
+                      </div>
+                      <div class="col-sm-3">
+                         <a href = "https://www2.ifrn.edu.br/ojs/index.php/HOLOS"><div class="thumb-wrapper">
+                          <div class="img-box">
+                            <img src="imagens/header/holos.png" class="img-responsive" alt="Capa da revista HOLOS.">
+                          </div>
+                          <div class="thumb-content">
+                            <h4>HOLOS</h4>
+                            <h4>v.30 n.4</h4>
+                            <h5>Renan Balbino</h5>
+                          </div>						
+                        </div></a>
+                      </div>		
+                      <div class="col-sm-3">
+                        <a href = "https://www2.ifrn.edu.br/ojs/index.php/RBEPT"><div class="thumb-wrapper">
+                          <div class="img-box">
+                            <img src="imagens/header/rbept.png" class="img-responsive" alt="Capa da revista RBEPT.">
+                          </div>
+                          <div class="thumb-content">
+                            <h4>RBEPT</h4>
+                            <h4>v.30 n.4</h4>
+                            <h5>Renan Balbino</h5>
+                          </div>						
+                        </div></a>
+                      </div>								
+                      <div class="col-sm-3">
+                        <a href = "https://www2.ifrn.edu.br/ojs/index.php/EmpiricaBR"><div class="thumb-wrapper">
+                          <div class="img-box">
+                            <img src="imagens/header/impirica.png" class="img-responsive" alt="Capa da revista EmpíricaBR.">
+                          </div>
+                          <div class="thumb-content">
+                            <h4>EmpíricaBR</h4>
+                            <h4>v.30 n.4</h4>
+                            <h5>Renan Balbino</h5>
+                          </div>						
+                        </div></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <a href = "https://www2.ifrn.edu.br/ojs/index.php/geoconexoes"><div class="thumb-wrapper">
+                          <div class="img-box">
+                            <img src="imagens/header/geo3.png" class="img-responsive" alt="Capa da revista Geoconexões.">
+                          </div>
+                          <div class="thumb-content">
+                            <h4>Geoconexões</h4>
+                            <h4>v.30 n.4</h4>
+                            <h5>Renan Balbino</h5>
+                          </div>						
+                        </div></a>
+                      </div>
+                      <div class="col-sm-3">
+                        <a href = "https://www2.ifrn.edu.br/ojs/index.php/DIALOGOS"><div class="thumb-wrapper">
+                          <div class="img-box">
+                            <img src="imagens/header/de.png" class="img-responsive" alt="Capa da revista Diálogos de Extensão.">
+                          </div>
+                          <div class="thumb-content">
+                            <h4>Diálogos de Extensão</h4>
+                            <h4>v.30 n.4</h4>
+                            <h5>Renan Balbino</h5>
+                          </div>						
+                        </div></a>
+                      </div>
+                      <div class="col-sm-3">
+                        <a href = "https://www2.ifrn.edu.br/ojs/index.php/cuca"><div class="thumb-wrapper">
+                          <div class="img-box">
+                            <img src="imagens/header/cuca2.png" class="img-responsive" alt="Capa da revista Cuca.">
+                          </div>
+                          <div class="thumb-content">
+                            <h4>Cuca</h4>
+                            <h4>v.30 n.4</h4>
+                            <h5>Renan Balbino</h5>
+                          </div>						
+                        </div></a>
+                      </div>
+                      <div class="col-sm-3">
+                        <a href = "https://www2.ifrn.edu.br/ojs/index.php/dialektike"><div class="thumb-wrapper">
+                          <div class="img-box">
+                            <img src="imagens/header/dialektike.png" class="img-responsive" alt="Capa da revista Dialektiké.">
+                          </div>
+                          <div class="thumb-content">
+                            <h4>Dialektiké</h4>
+                            <h4>v.30 n.4</h4>
+                            <h5>Renan Balbino</h5>
+                          </div>						
+                        </div></a>
+                      </div>						
+                    </div>
+                  </div>
+                </div>
+                <!-- Carousel controls -->
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                  <i class="fa fa-angle-left"></i>
+                </a>
+                <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class = "revistas">
+          <div class = "pattern1">
+          </div>
+          <div class = "mainrev">
+            <h2 class ="fundoverde">Nossas <span class="boldwhite"> revistas</span></h2>
+            <div class = "iconsrev">
+              <a href = "https://www2.ifrn.edu.br/ojs/index.php/cuca"><div id = "cuca"></div></a>
+              <a href = "https://www2.ifrn.edu.br/ojs/index.php/dialektike"><div id = "dial">
+              <h1>Dialektiké</h1>
+              </div></a>
+              <a href = "https://www2.ifrn.edu.br/ojs/index.php/DIALOGOS"><div id = "dialexten">
+              <h1>Diálogos de Extensão</h1>
+              </div></a>
+              <a href ="https://www2.ifrn.edu.br/ojs/index.php/EmpiricaBR"><div id = "empirica"></div></a>
+              <div id = "formar">
+              <h1>Formar</h1>
+              </div>
+              <a href = "https://www2.ifrn.edu.br/ojs/index.php/geoconexoes"><div id = "geo"></div></a>
+              <a href = "https://www2.ifrn.edu.br/ojs/index.php/HOLOS"><div id = "holos"></div></a>
+              <div id = "journal">
+              <h1>Journal of Technological Innovation in Computing</h1>
+              </div>
+              <a href = "https://www2.ifrn.edu.br/ojs/index.php/performar"><div id = "performar">
+              <h1>Per.Form[ar]</h1>
+              </div></a>
+              <a href = "https://www2.ifrn.edu.br/ojs/index.php/RBEPT"><div id = "rbept"></div></a>
+            </div>
+          </div>
+          </div>
+          <div class = "pattern2"></div>
+        </section>
+        <!-- <section class = "sobreportal1">
+          <div id = "info1">
+            <div class = "pattern3">
+            </div>
+            <div class = "sobre">
+            <h2 class ="fundoverde">Sobre o <span class="boldwhite">Portal de Periódicos</span></h2>
+            <p>O Portal de Periódicos do Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte (IFRN) abriga as revistas científicas eletrônicas editadas na Pró-Reitoria de Pesquisa e Inovação (PROPI), através da Coordenação da Editora IFRN (COEDI), tendo em vista o compromisso com o acesso aberto e a difusão do conhecimento.</p>
+          </div>
+          </div>
+          <div class = "person1">
+          </div>
+        </section>
+        <section class = "sobreportal2">
+          <div class = "person2">
+          </div>
+          <div id = "info2">
+            <p>Atualmente, o Portal de Periódicos do IFRN possui 10 (dez) revistas com periodicidades variadas, que vão de trimestral a anual, indexadas em várias bases de dados científicas. O Portal utiliza o Sistema Eletrônico de Editoração de Revistas (SEER), traduzido pelo Instituto Brasileiro de Informação em Ciência e Tecnologia (IBICT) a partir da versão do Open Journal Sistem (OJS).</p>
+            <div class = "pattern4">
+              </div>
+          </div>
+        </section> -->
+        <section class = "sobreportal">
+          <section>
+            <div class="titulo">
+            <h2>Conheça o portal</h2>
+            <div class = "deco">
+            <div class = "linhav"></div>
+            <div class = "bola"></div>
+            <div class = "linhav"></div>
+            </div>
+            </section>
+            <div class = "textblock">
+              <p>O <span class = "textblockbold">Portal de Periódicos do Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte (IFRN)</span> abriga as revistas científicas eletrônicas editadas na Pró-Reitoria de Pesquisa e Inovação (PROPI), através da Coordenação da Editora IFRN (COEDI), tendo em vista o compromisso com o acesso aberto e a difusão do conhecimento.</p>
+            </div>
+            <div class = "maisinfo">
+              <div class = "person1">
+                <figure>
+                  <img src = "./imagens/header/person1.png">
+                </figure>
+              </div>
+              <div class = "textfree">
+                <p><span class = "textblockbold" style = "font-size: 20px;">Atualmente</span>, o Portal de Periódicos do IFRN possui 10 (dez) revistas com periodicidades variadas, que vão de trimestral a anual, indexadas em várias bases de dados científicas. O Portal utiliza o Sistema Eletrônico de Editoração de Revistas (SEER), traduzido pelo Instituto Brasileiro de Informação em Ciência e Tecnologia (IBICT) a partir da versão do Open Journal Sistem (OJS).</p>
+              </div>
+            </div>
+        </section>
+        <section id = "estatisticas">
+          <div class="titulo">
+            <h2>Estatísticas</h2>
+            <div class = "deco">
+            <div class = "linhav"></div>
+            <div class = "bola"></div>
+            <div class = "linhav"></div>
+            </div>
+          </div>
+            <div class="m-4">
+                <div class="accordion" id="myAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne">2023</button>									
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                            <div class="card-body">
+                                <figure>
+                                  <img src="./imagens/dados.JPG" alt="Imagem das estatísticas do Portal de Periódicos referentes ao ano de 2023."</img>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">2022</button>									
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                            <div class="card-body">
+                                <figure>
+                                  <img src="./imagens/dados.JPG" alt="Imagem das estatísticas do Portal de Periódicos referentes ao ano de 2022."</img>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">2021</button>									
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                            <div class="card-body">
+                                <figure>
+                                  <img src="./imagens/dados.JPG" alt="Imagem das estatísticas do Portal de Periódicos referentes ao ano de 2021."</img>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour">2020</button>									
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                            <div class="card-body">
+                                <figure>
+                                  <img src="./imagens/dados.JPG" alt="Imagem das estatísticas do Portal de Periódicos referentes ao ano de 2020."</img>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+      <div class = "infofooter">
+        <address>Pró-Reitoria de Pesquisa e Inovação | Coordenação da Editora IFRN
+          Rua Dr. Nilo Bezerra Ramalho, 1692, Tirol - 59015-300 - Natal/RN
+          Reitoria - 1º andar, Sala 105</address>
+        <p id = "copyright">Copyright © Editora IFRN.</p>
+      </div>
+      <figure id = "ojslogo">
+        <img src = "./imagens/ojs.svg" alt = "Logo da OJS">
+      </figure>
+    </footer>
+</body>
+</html>

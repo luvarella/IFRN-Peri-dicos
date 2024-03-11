@@ -1,0 +1,282 @@
+/* Reset de estilos para todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos gerais do corpo da página */
+body {
+  background-image: url("/imagens/header/fundo2.png"),
+    url("/imagens/header/fundo.png"), url("/imagens/header/fundo2.png");
+  background-repeat: repeat-x;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+}
+
+/* Estilos do cabeçalho */
+header {
+  /* width: 80%; */
+  margin: 30px auto;
+  margin-bottom: 5em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Estilos para a seção de imagens no cabeçalho */
+.imagens-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+/* Estilos para o plugin na seção de imagens no cabeçalho */
+.imagens-header .plugin {
+  display: flex;
+  gap: 15px;
+}
+
+.imagens-header .plugin img{
+align-items: center;
+}
+
+/* main */
+  /* background-color: green; */
+/*}*/
+
+
+/* Estilos básicos para o menu de navegação */
+nav {
+  /* width: 80%; */
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: white;
+  background-color: #2F9E41;
+  font-weight: 400;
+  gap: 2em;
+  box-shadow: 10px 0 black;
+}
+
+@keyframes h1-anda{
+    from{
+        margin-top: -15px;
+    }
+    to{
+        margin-top: 0;
+    }
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  font-size: 17px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px;
+  transition: background-color 0.3s ease; 
+}
+
+nav ul a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+/* ícone de seta para baixo ao lado do texto "Revistas" */
+.dropdown-icon::after {
+  content: " \25BC"; /* Seta para baixo usando Unicode */
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+/* Estilos para o menu suspenso */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 190px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-decoration: none;
+  animation-name: h1-anda;
+  animation-duration: 0.3s;
+  animation-iteration-count: initial;
+  font-size: 16px;
+}
+
+.dropdown-content a {
+  color: rgb(0, 0, 0);
+  /*padding: 12px 16px;*/
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.3s ease; 
+  font-weight: normal;
+}
+
+.dropdown-content a:hover {
+  background-color: #2F9E41;
+  color: white;
+  font-weight: 400;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+
+}
+
+.dropdown:hover .fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+.fa-chevron-down {
+    font-size: 0.8em;
+    margin-left: 3px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+
+
+/* Estilizando o campo de pesquisa */
+.search-input {
+    padding: 8px 20px;
+    border: 1px solid #ffffff; 
+    border-radius: 20px; 
+    background-color: transparent; 
+    width: 450px; 
+    color: #f6f6f6; 
+    font-size: 16px;
+    outline: none;
+    height: 30px;
+}
+
+
+/* Estilizando o ícone de pesquisa */
+.search-icon {
+    position: absolute; 
+    right: 10px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
+
+.input-pesquisa {
+    position: relative; 
+}
+
+
+.search-input::placeholder {
+    padding-right: 20px; 
+}
+.search-input:focus {
+    box-shadow: none; 
+}
+
+/* Plugin relacionado ao ícone do perfil e ao lang */
+.plugin{
+  align-items: center;
+}
+
+/* Referente a uma parte vazia para alinhar a logotipo do Portal de Periódicos */
+.imagens-header .vazio{
+  width: 75px;
+}
+
+.deco{
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  align-items: center;
+}
+
+.linhav{
+  width: 115px;
+  background-color: #2F9E41;
+  height: 2px;
+}
+
+.bola{
+  height: 6px;
+  width: 6px;
+  border-radius: 100%;
+  background-color: #CD191E;
+}
+
+.fundoverde{
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.boldwhite{
+  font-weight: 600;
+  color: white;
+  margin-left: 10px;
+}
+
+.textblock{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; 
+  background-color: white;
+  border-left: 4px solid #2F9E41;
+  border-right: 4px solid #2F9E41;
+  border-radius: 15px;
+  width: 970px;
+  /* box-shadow: 0px 4px 10px #D9D9D9; */
+  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.2);
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.textblock p{
+  font-size: 18px;
+  color: black;
+  margin: 2em;
+}
+
+.textblockbold{
+  font-weight: 600;
+  font-size: 18px;
+  color: #2F9E41;
+}
+
+footer{
+  padding: 3em;
+  height: 180px;
+  width: 100%;
+  background-color: #2F9E41;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-top: 6em;
+}
+
+.infofooter{
+  width: 26em;
+}
+
+#copyright{
+  color: white;
+}
+
+address{
+  color: white
+}
