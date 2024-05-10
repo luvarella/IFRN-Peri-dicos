@@ -1,0 +1,77 @@
+#contato{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+#sac form{
+  margin-top: 40px;
+  text-align: center;
+}
+
+form div{
+  margin-bottom: 15px;
+}
+
+#nome{
+  width: 466px;
+  height: 43px;
+  border-right: 3px solid #2F9E41;
+  border-left: 3px solid #2F9E41;
+  border-bottom: 2px solid #2F9E41;
+  border-top: 2px solid #2F9E41;
+  border-radius: 5px;
+}
+
+#email{
+    width: 466px;
+    height: 43px;
+    border-right: 3px solid #2F9E41;
+    border-left: 3px solid #2F9E41;
+    border-bottom: 2px solid #2F9E41;
+    border-top: 2px solid #2F9E41;
+    border-radius: 5px;
+}
+
+#msg{
+  width: 466px;
+  height: 133px;
+  border-right: 3px solid #2F9E41;
+  border-left: 3px solid #2F9E41;
+  border-bottom: 2px solid #2F9E41;
+  border-top: 2px solid #2F9E41;
+  border-radius: 5px;
+}
+
+.important{
+  color: #CD191E;
+}
+
+#enviar input{
+  width: 226px;
+  height: 55px;
+  border-radius: 5px;
+  border-right: 1px solid #2F9E41;
+  border-left: 1px solid #2F9E41;
+  border-bottom: 1px solid #2F9E41;
+  border-top: 1px solid #2F9E41;
+  background-color: #2f9e41;
+  color: white;
+  font-size: 18px;
+}
+
+#loc{
+  text-align: center;
+  margin-left: 35px;
+}
+
+#loc p{
+  margin-top: 22px;
+  margin-bottom: 8px;
+}
+
+#contato p{
+  width: 466px;
+  font-size: 14px;
+}
